@@ -1,11 +1,12 @@
 /* CODESTITCH STYLES, RESET, HEADER/NAVIGATION AND FOOTER */
-
+@import "./../../../node_modules/bootstrap/scss/bootstrap.scss";
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
 
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
+
     // Website colors
     :root {
         --primary: #ffba19;
@@ -82,6 +83,7 @@
 
         &:hover {
             color: #fff;
+
             &:before {
                 width: 100%;
             }
@@ -122,6 +124,7 @@
 
 /* Fonts and general styles */
 @media only screen and (min-width: 0rem) {
+
     body,
     html {
         margin: 0;
@@ -188,6 +191,7 @@
         left: 0;
         opacity: 0;
     }
+
     // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
 
     /* roboto-regular - latin */
@@ -197,8 +201,11 @@
         font-weight: 400;
         font-display: swap;
         src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff");
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
+
     /* roboto-700 - latin */
     @font-face {
         font-style: normal;
@@ -206,8 +213,11 @@
         font-weight: 700;
         font-display: swap;
         src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("/assets/fonts/roboto-v29-latin-700.woff") format("woff");
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
+
     /* roboto-900 - latin */
     @font-face {
         font-style: normal;
@@ -215,12 +225,15 @@
         font-weight: 900;
         font-display: swap;
         src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("/assets/fonts/roboto-v29-latin-900.woff") format("woff");
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 }
 
 /* Reset Margins */
 @media only screen and (min-width: 1024px) {
+
     body,
     html {
         margin: 0;
@@ -230,6 +243,7 @@
 
 /* Scale full website with the viewport width */
 @media only screen and (min-width: 3000px) {
+
     body,
     html {
         font-size: 0.55vw;
@@ -324,6 +338,16 @@
     body {
         &.cs-open {
             overflow: hidden;
+        }
+    }
+
+    #cs-contact-info {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .cs-contact-info {
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
 
@@ -488,27 +512,35 @@
             &:nth-of-type(1) {
                 transition-delay: 0.05s;
             }
+
             &:nth-of-type(2) {
                 transition-delay: 0.1s;
             }
+
             &:nth-of-type(3) {
                 transition-delay: 0.15s;
             }
+
             &:nth-of-type(4) {
                 transition-delay: 0.2s;
             }
+
             &:nth-of-type(5) {
                 transition-delay: 0.25s;
             }
+
             &:nth-of-type(6) {
                 transition-delay: 0.3s;
             }
+
             &:nth-of-type(7) {
                 transition-delay: 0.35s;
             }
+
             &:nth-of-type(8) {
                 transition-delay: 0.4s;
             }
+
             &:nth-of-type(9) {
                 transition-delay: 0.45s;
             }
@@ -577,6 +609,7 @@
                 opacity: 1;
                 transform: translateX(0);
             }
+
             &:before {
                 opacity: 1;
                 width: 100%;
@@ -705,6 +738,7 @@
             &.cs-active,
             &:hover {
                 cursor: pointer;
+
                 .cs-drop-ul {
                     visibility: visible;
                     opacity: 1;
@@ -768,39 +802,51 @@
             &:nth-of-type(1) {
                 transition-delay: 0.05s;
             }
+
             &:nth-of-type(2) {
                 transition-delay: 0.1s;
             }
+
             &:nth-of-type(3) {
                 transition-delay: 0.15s;
             }
+
             &:nth-of-type(4) {
                 transition-delay: 0.2s;
             }
+
             &:nth-of-type(5) {
                 transition-delay: 0.25s;
             }
+
             &:nth-of-type(6) {
                 transition-delay: 0.3s;
             }
+
             &:nth-of-type(7) {
                 transition-delay: 0.35s;
             }
+
             &:nth-of-type(8) {
                 transition-delay: 0.4s;
             }
+
             &:nth-of-type(9) {
                 transition-delay: 0.45s;
             }
+
             &:nth-of-type(10) {
                 transition-delay: 0.5s;
             }
+
             &:nth-of-type(11) {
                 transition-delay: 0.55s;
             }
+
             &:nth-of-type(12) {
                 transition-delay: 0.6s;
             }
+
             &:nth-of-type(13) {
                 transition-delay: 0.65s;
             }
@@ -867,6 +913,71 @@
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+    #cs-header-banner {
+        z-index: 10000;
+        width: 100%;
+        position: fixed;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        min-height: 60px;
+        background-color: #f8f8f8;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #e0e0e0;
+        top: 0;
+        border: 0;
+
+        .cs-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: auto;
+            max-width: 80rem;
+            width: 100%;
+            gap: 1.5rem;
+        }
+
+        .cs-contact-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .cs-contact-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .cs-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .cs-social-icons {
+            display: flex;
+            gap: 10px;
+            margin-left: 20px;
+        }
+
+        .cs-social-icon {
+            width: 16px;
+            height: 16px;
+            background-color: #666;
+            border-radius: 50%;
+        }
+
+        .cs-search-icon {
+            width: 16px;
+            height: 16px;
+            background-color: #666;
+            margin-left: 20px;
+        }
+    }
+
     #cs-navigation {
         z-index: 10000;
         position: fixed;
@@ -878,6 +989,7 @@
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
         font-family: "Roboto", "Arial", sans-serif;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        top: 60px;
 
         .cs-container {
             display: flex;
@@ -940,6 +1052,7 @@
             font-size: clamp(0.875rem, 1vw, 1rem);
             line-height: 1.5em;
             color: var(--bodyTextColor);
+
             &:hover {
                 &:before {
                     width: 100%;
@@ -1166,6 +1279,7 @@
     #cta {
         position: relative;
         margin-top: calc(100 / 16 * 1rem);
+
         .container {
             margin: auto;
             width: 90.0625%;
@@ -1189,9 +1303,11 @@
                 width: 100%;
             }
         }
+
         &:before {
             display: none;
         }
+
         &:after {
             z-index: -3;
             position: absolute;
@@ -1237,6 +1353,7 @@
             margin: auto;
             margin-bottom: calc(50 / 16 * 1rem);
             text-align: center;
+
             .logo {
                 display: inline-block;
                 margin: auto;
@@ -1267,6 +1384,7 @@
             margin: auto;
             max-width: calc(407 / 16 * 1rem);
             width: 96%;
+
             .lists {
                 display: flex;
                 flex-wrap: wrap;
@@ -1274,6 +1392,7 @@
                 margin: auto;
                 max-width: calc(307 / 16 * 1rem);
                 width: 96%;
+
                 ul {
                     margin-top: 0;
                     margin-bottom: 0;
@@ -1291,11 +1410,13 @@
                             line-height: calc(21 / 18 * 1em);
                             color: #fff;
                             transition: color 0.3s;
+
                             &:hover {
                                 color: var(--primary);
                             }
                         }
                     }
+
                     h2 {
                         position: relative;
                         margin-bottom: calc(37 / 16 * 1rem);
@@ -1320,6 +1441,7 @@
 
                     &:nth-of-type(3) {
                         margin-top: calc(50 / 16 * 1rem);
+
                         li {
                             display: flex;
                             justify-content: flex-start;
@@ -1378,6 +1500,7 @@
 @media only screen and (min-width: 64rem) {
     #footer {
         font-size: min(1.2vw, 1em);
+
         .container {
             display: flex;
             flex-direction: row;
@@ -1441,6 +1564,7 @@
                             }
                         }
                     }
+
                     &:nth-of-type(3) {
                         margin-top: 0;
 
