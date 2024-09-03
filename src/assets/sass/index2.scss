@@ -1,0 +1,106 @@
+// @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+/*-- -------------------------- -->
+<---          Services 2        -->
+<--- -------------------------- -*/
+#services2 {
+        .service-img {
+                height: 200px;
+                object-fit: cover;
+        }
+
+        .yellow-underline {
+                width: 50px;
+                height: 3px;
+                background-color: #ffc107;
+                margin: 10px auto;
+        }
+}
+
+/*-- -------------------------- -->
+<---      Recent Projects       -->
+<--- -------------------------- -*/
+#recent-projects {
+        .yellow-underline {
+                width: 50px;
+                height: 3px;
+                background-color: #ffc107;
+                margin: 10px auto;
+        }
+
+        .carousel-item img {
+                height: 400px;
+                object-fit: cover;
+        }
+}
+
+/*-- -------------------------- -->
+<---          About Us          -->
+<--- -------------------------- -*/
+#about-us {
+        .yellow-underline {
+                width: 50px;
+                height: 3px;
+                background-color: #ffc107;
+                margin: 10px auto;
+        }
+
+        .circular-image {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                object-fit: cover;
+        }
+
+        .icon-circle {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: #f8f9fa;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                color: #ffc107;
+        }
+}
+
+/*-- -------------------------- -->
+<---          Choose Us        -->
+<--- -------------------------- -*/
+#choose-us {
+        .yellow-underline {
+                width: 50px;
+                height: 3px;
+                background-color: #ffc107;
+                margin: 10px auto;
+        }
+
+        .icon-circle {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                border: 2px solid #ffc107;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto 20px;
+        }
+
+        .icon-circle svg {
+                width: 60px;
+                height: 60px;
+                fill: #ffc107;
+        }
+
+        .feature-title {
+                font-weight: bold;
+                margin-bottom: 10px;
+        }
+
+        .feature-underline {
+                width: 30px;
+                height: 2px;
+                background-color: #ffc107;
+                margin: 0 auto 15px;
+        }
+}

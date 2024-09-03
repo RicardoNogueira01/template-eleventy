@@ -35,6 +35,7 @@
             border-radius: calc(24 / 16 * 1em);
             /* clips img tag corners */
             overflow: hidden;
+
             img {
                 position: absolute;
                 top: 0;
@@ -163,6 +164,7 @@
     body.dark-mode {
         #sbs {
             .cs-left {
+
                 &:before,
                 &:after {
                     background: var(--accent);
@@ -238,6 +240,7 @@
             border-radius: calc(24 / 16 * 1em);
             /* clips img tag corners */
             overflow: hidden;
+
             img {
                 position: absolute;
                 top: 0;
@@ -286,6 +289,7 @@
             margin-bottom: calc(16 / 16 * 1rem);
             max-width: calc(750 / 16 * 1rem);
             text-align: left;
+
             &:last-of-type {
                 margin-bottom: calc(32 / 16 * 1rem);
             }
@@ -363,6 +367,7 @@
     body.dark-mode {
         #sbs-r {
             .cs-left {
+
                 &:before,
                 &:after {
                     background: var(--accent);
@@ -416,6 +421,7 @@
         padding: var(--sectionPadding);
         /* Centers button */
         text-align: center;
+
         .cs-container {
             margin: auto;
             max-width: calc(1322 / 16 * 1em);
@@ -457,6 +463,7 @@
         .cs-picture {
             position: relative;
             display: block;
+
             img {
                 position: absolute;
                 top: 0;
@@ -658,6 +665,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #reviews {
+
             .cs-title,
             .cs-text,
             .cs-item-p,

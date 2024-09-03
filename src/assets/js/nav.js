@@ -1,3 +1,6 @@
+//Bootstrap js
+import "./../../../node_modules/bootstrap/js/dist/carousel";
+
 // Select DOM elements
 const bodyElement = document.querySelector("body");
 const navbarMenu = document.querySelector("#cs-navigation");
@@ -38,7 +41,7 @@ function toggleDropdown(element) {
 
 // Add event listeners to each dropdown element for accessibility
 const dropdownElements = document.querySelectorAll(".cs-dropdown");
-dropdownElements.forEach(element => {
+dropdownElements.forEach((element) => {
     let escapePressed = false;
 
     element.addEventListener("focusout", function (event) {
@@ -48,7 +51,7 @@ dropdownElements.forEach(element => {
             return;
         }
 
-        // If the focus has moved outside the dropdown, remove the active class from the dropdown 
+        // If the focus has moved outside the dropdown, remove the active class from the dropdown
         if (!element.contains(event.relatedTarget)) {
             element.classList.remove("cs-active");
             const dropdownButton = element.querySelector(".cs-dropdown-button");
@@ -86,7 +89,7 @@ dropdownElements.forEach(element => {
 
 // Pressing Enter will redirect to the href
 const dropdownLinks = document.querySelectorAll(".cs-drop-li > .cs-li-link");
-dropdownLinks.forEach(link => {
+dropdownLinks.forEach((link) => {
     link.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
             window.location.href = this.href;

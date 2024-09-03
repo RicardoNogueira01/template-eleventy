@@ -1,0 +1,212 @@
+---
+title: 'Index Template 2 | Ricardo Nogueira Web Designs'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'index2/'
+eleventyNavigation:
+    key: Index2
+    order: 700
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+        <link rel="stylesheet" href="/assets/css/index2.css">
+{% endblock %}
+
+{% block body %}
+        <!-- ============================================ -->
+        <!--                    LANDING                   -->
+        <!-- ============================================ -->
+
+        <section id="int-hero">
+                <h1 id="home-h">Index template 2</h1>
+                <picture>
+                        <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+                </picture>
+
+        </section>
+
+        <!-- ============================================ -->
+        <!--                 Services                     -->
+        <!-- ============================================ -->
+
+        <section id="services2" class="py-5">
+                <div class="container">
+                        <h1 class="text-center mb-2">OUR SERVICES</h1>
+                        <div class="yellow-underline mb-4"></div>
+
+                        <p class="text-center mb-5 w-50 m-auto">
+            With over 15 years experience and real focus on customer satisfaction, you can rely on us for your next renovation,
+            driveway sett or home repair. We provide a professional service for private and commercial customers.
+        </p>
+                        <div class="row">
+                                <div class="col-md-4 mb-4">
+                                        <img src="https://placehold.co/390x260" alt="Interior Renovation" class="img-fluid service-img w-100">
+                                        <h3 class="text-center mt-3 fs-5 fw-bold">INTERIOR RENOVATION</h3>
+                                        <div class="yellow-underline my-4"></div>
+                                        <p class="text-center fs-6">We can help you bring new life to existing rooms and develop unused spaces.</p>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                        <img src="https://placehold.co/390x260" alt="Design and Build" class="img-fluid service-img w-100">
+                                        <h3 class="text-center mt-3 fs-5 fw-bold">DESIGN AND BUILD</h3>
+                                        <div class="yellow-underline my-4"></div>
+                                        <p class="text-center fs-6">From initial design and project specification to achieving a high end finish.</p>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                        <img src="https://placehold.co/390x260" alt="Tiling and Painting" class="img-fluid service-img w-100">
+                                        <h3 class="text-center mt-3 fs-5 fw-bold">TILING AND PAINTING</h3>
+                                        <div class="yellow-underline my-4"></div>
+                                        <p class="text-center fs-6">We offer quality tiling and painting solutions for interior and exterior.</p>
+                                </div>
+                        </div>
+                        <div class="text-center mt-4">
+                                <button class="btn btn-warning btn-lg text-light rounded-pill">VIEW ALL SERVICES</button>
+                        </div>
+                </div>
+
+        </section>
+
+        <!-- ============================================ -->
+        <!--                 RECENT PROJECTS              -->
+        <!-- ============================================ -->
+        <section id="recent-projects" class="container-fluid py-5">
+                <div class="w-50 m-auto">
+                        <h1 class="text-center mb-2">RECENT PROJECTS</h1>
+                        <div class="yellow-underline mb-4"></div>
+
+                        <p class="text-center mb-5">
+            Here are a few of many projects we have completed for our customers. We provide a professional service
+            which includes consultation, free estimate, design, supply of materials and installation.
+        </p>
+                </div>
+
+                <div id="recentProjectsCarousel" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#recentProjectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#recentProjectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#recentProjectsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                        <img src="https://placehold.co/350x230" class="d-block w-100" alt="Interior Design Project">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                        <img src="https://placehold.co/350x230" class="d-block w-100" alt="Landscaping Project">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="10000">
+                                        <img src="https://placehold.co/350x230" class="d-block w-100" alt="Plumbing Project">
+                                </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#recentProjectsCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#recentProjectsCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                        </button>
+                </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                 ABOUT US                     -->
+        <!-- ============================================ -->
+        <section id="about-us" class="container py-5">
+                <div class="w-50 m-auto">
+                        <h1 class="text-center mb-2">ABOUT US</h1>
+                        <div class="yellow-underline mb-4"></div>
+                        <p class="text-center mb-5">
+                                    We provide a professional renovation and installation services with a real focus on customer satisfaction.
+                                    Our installations are carried out by fully trained staff to the highest professional standards.
+                                </p>
+                </div>
+
+                <div class="row align-items-center">
+                        <div class="col-md-6 text-center mb-4 mb-md-0">
+                                <img src="https://placehold.co/500" alt="Professional worker" class="rounded-circle">
+                        </div>
+                        <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-4">
+                                        <div class="icon-circle me-3">
+                                                <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div>
+                                                <h3 class="mb-1">OVER 15 YEARS EXPERIENCE</h3>
+                                                <p class="mb-0">We combine quality workmanship, superior knowledge and low prices to provide you with service unmatched by our competitors.</p>
+                                        </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                        <div class="icon-circle me-3">
+                                                <i class="fas fa-paint-roller"></i>
+                                        </div>
+                                        <div>
+                                                <h3 class="mb-1">BEST MATERIALS</h3>
+                                                <p class="mb-0">We have the experience, personnel and resources to make the project run smoothly. We can ensure a job is done on time.</p>
+                                        </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                        <div class="icon-circle me-3">
+                                                <i class="fas fa-clipboard-check"></i>
+                                        </div>
+                                        <div>
+                                                <h3 class="mb-1">PROFESSIONAL STANDARDS</h3>
+                                                <p class="mb-0">Work with us involves a carefully planned series of steps, centered around a schedule we stick to and daily communication.</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                 CHOOSE US              -->
+        <!-- ============================================ -->
+        <section id="choose-us" class="container py-5">
+                <div class="w-50 m-auto">
+                        <h1 class="text-center mb-2">WHY CHOOSE RENOVATE</h1>
+                        <div class="yellow-underline mb-4"></div>
+                        <p class="text-center mb-5">
+                                    Founded by Kevin Smith back in 2000, Renovate has established itself as one of the greatest and prestigious
+                                    providers of construction focused interior renovation services and building.
+                                </p>
+                </div>
+
+                <div class="row text-center">
+                        <div class="col-md-4 mb-4">
+                                <div class="icon-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
+                                        </svg>
+                                </div>
+                                <h3 class="feature-title">OVER 15 YEARS EXPERIENCE</h3>
+                                <div class="feature-underline"></div>
+                                <p>Morbi nulla tortor, dignissim est node cursus euismod est arcu. Nomad at vehicula novum justo magna.</p>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                                <div class="icon-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M272 96c-78.6 0-145.1 51.5-167.7 122.5c33.6-17 71.5-26.5 111.7-26.5h88c8.8 0 16 7.2 16 16s-7.2 16-16 16H288 216s0 0 0 0c-16.6 0-32.7 1.9-48.3 5.4c-25.9 5.9-49.9 16.4-71.4 30.7c0 0 0 0 0 0C38.3 298.8 0 364.9 0 440v16c0 13.3 10.7 24 24 24s24-10.7 24-24V440c0-48.7 20.7-92.5 53.8-123.2C121.6 392.3 190.3 448 272 448l1 0c132.1-.7 239-130.9 239-291.4c0-42.6-7.5-83.1-21.1-119.6c-2.6-6.9-12.7-6.6-16.2-.1C455.9 72.1 418.7 96 376 96L272 96z"/>
+                                        </svg>
+                                </div>
+                                <h3 class="feature-title">BEST MATERIALS</h3>
+                                <div class="feature-underline"></div>
+                                <p>Morbi nulla tortor, dignissim est node cursus euismod est arcu. Nomad at vehicula novum justo magna.</p>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                                <div class="icon-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                                <path d="M480 0c-17.7 0-32 14.3-32 32V192 512h64V192H624c8.8 0 16-7.2 16-16V48c0-8.8-7.2-16-16-16H512c0-17.7-14.3-32-32-32zM416 159L276.8 39.7c-12-10.3-29.7-10.3-41.7 0l-224 192C1 240.4-2.7 254.5 2 267.1S18.6 288 32 288H64V480c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v96c0 17.7 14.3 32 32 32h64.7l.2 0h-1V159z"/>
+                                        </svg>
+                                </div>
+                                <h3 class="feature-title">PROFESSIONAL STANDARDS</h3>
+                                <div class="feature-underline"></div>
+                                <p>Morbi nulla tortor, dignissim est node cursus euismod est arcu. Nomad at vehicula novum justo magna.</p>
+                        </div>
+                </div>
+        </section>
+
+        {% include 'components/cta.html' %}
+
+{% endblock %}
