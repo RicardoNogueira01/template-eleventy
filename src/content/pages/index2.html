@@ -12,6 +12,7 @@ eleventyNavigation:
 
 {% block head %}
         <link rel="stylesheet" href="/assets/css/index2.css">
+        <script defer src="/assets/js/multi-item-carousel.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -26,7 +27,6 @@ eleventyNavigation:
                         <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
                         <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
                 </picture>
-
         </section>
 
         <!-- ============================================ -->
@@ -125,10 +125,10 @@ eleventyNavigation:
                 </div>
 
                 <div class="row align-items-center">
-                        <div class="col-md-6 text-center mb-4 mb-md-0">
-                                <img src="https://placehold.co/500" alt="Professional worker" class="rounded-circle">
+                        <div class="col col-md-6 text-center mb-4 mb-md-0">
+                                <img src="https://placehold.co/300" alt="Professional worker" class="object-fit-cover rounded-circle">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col col-md-6">
                                 <div class="d-flex align-items-center mb-4">
                                         <div class="icon-circle me-3">
                                                 <i class="fa-solid fa-user"></i>
@@ -180,9 +180,9 @@ eleventyNavigation:
                                                 <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
                                         </svg>
                                 </div>
-                                <h3 class="feature-title">OVER 15 YEARS EXPERIENCE</h3>
+                                <h3 class="feature-title fs-5">OVER 15 YEARS EXPERIENCE</h3>
                                 <div class="feature-underline"></div>
-                                <p>Morbi nulla tortor, dignissim est node cursus euismod est arcu. Nomad at vehicula novum justo magna.</p>
+                                <p class="fs-6 lh-lg">Morbi nulla tortor, dignissim est node cursus euismod est arcu. Nomad at vehicula novum justo magna.</p>
                         </div>
                         <div class="col-md-4 mb-4">
                                 <div class="icon-circle">
@@ -190,9 +190,9 @@ eleventyNavigation:
                                                 <path d="M272 96c-78.6 0-145.1 51.5-167.7 122.5c33.6-17 71.5-26.5 111.7-26.5h88c8.8 0 16 7.2 16 16s-7.2 16-16 16H288 216s0 0 0 0c-16.6 0-32.7 1.9-48.3 5.4c-25.9 5.9-49.9 16.4-71.4 30.7c0 0 0 0 0 0C38.3 298.8 0 364.9 0 440v16c0 13.3 10.7 24 24 24s24-10.7 24-24V440c0-48.7 20.7-92.5 53.8-123.2C121.6 392.3 190.3 448 272 448l1 0c132.1-.7 239-130.9 239-291.4c0-42.6-7.5-83.1-21.1-119.6c-2.6-6.9-12.7-6.6-16.2-.1C455.9 72.1 418.7 96 376 96L272 96z"/>
                                         </svg>
                                 </div>
-                                <h3 class="feature-title">BEST MATERIALS</h3>
+                                <h3 class="feature-title fs-5">BEST MATERIALS</h3>
                                 <div class="feature-underline"></div>
-                                <p>Morbi nulla tortor, dignissim est node cursus euismod est arcu. Nomad at vehicula novum justo magna.</p>
+                                <p class="fs-6 lh-lg">Morbi nulla tortor, dignissim est node cursus euismod est arcu. Nomad at vehicula novum justo magna.</p>
                         </div>
                         <div class="col-md-4 mb-4">
                                 <div class="icon-circle">
@@ -200,13 +200,351 @@ eleventyNavigation:
                                                 <path d="M480 0c-17.7 0-32 14.3-32 32V192 512h64V192H624c8.8 0 16-7.2 16-16V48c0-8.8-7.2-16-16-16H512c0-17.7-14.3-32-32-32zM416 159L276.8 39.7c-12-10.3-29.7-10.3-41.7 0l-224 192C1 240.4-2.7 254.5 2 267.1S18.6 288 32 288H64V480c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v96c0 17.7 14.3 32 32 32h64.7l.2 0h-1V159z"/>
                                         </svg>
                                 </div>
-                                <h3 class="feature-title">PROFESSIONAL STANDARDS</h3>
+                                <h3 class="feature-title fs-5">PROFESSIONAL STANDARDS</h3>
                                 <div class="feature-underline"></div>
-                                <p>Morbi nulla tortor, dignissim est node cursus euismod est arcu. Nomad at vehicula novum justo magna.</p>
+                                <p class="fs-6 lh-lg">Morbi nulla tortor, dignissim est node cursus euismod est arcu. Nomad at vehicula novum justo magna.</p>
                         </div>
                 </div>
         </section>
 
+        <!-- ============================================ -->
+        <!--                 Our Work                     -->
+        <!-- ============================================ -->
+        <section id="our-work" class="container py-5"></section>
+
+        <!-- ============================================ -->
+        <!--                 Gallery                     -->
+        <!-- ============================================ -->
+        <section id="gallery" class="container-fluid my-5"></section>
+
+        <!-- ============================================ -->
+        <!--                 Template 1                   -->
+        <!-- ============================================ -->
+        <section class="container-fluid">
+                <div class="row g-0">
+                        <div class="col-md-6">
+                                <div class="position-relative">
+                                        <img src="https://placehold.co/900x641" class="w-100" alt="Best Sellers">
+                                        <div class="position-absolute top-50 start-50 translate-middle text-white text-center text-light">
+                                                <h2 class="text-light">Best Sellers</h2>
+                                                <a href="#" class="btn btn-light ">Shop Now</a>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6">
+                                <div class="position-relative">
+                                        <img src="https://placehold.co/900x641" class="w-100" alt="New Arrivals">
+                                        <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
+                                                <h2 class="text-light">New Arrivals</h2>
+                                                <a href="#" class="btn btn-light">Shop Now</a>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+        <section id="services3" class="container my-5">
+                <h6 class="text-center mb-4">
+                        <span class="border-top border-bottom px-3 py-2">Our Services</span></h6>
+
+                <h1 class="text-center mb-5">Best solutions here <span class="orange-text">Services</span></h1>
+
+                <div class="row g-4">
+                        <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body text-center">
+                                                <img src="path_to_mechanical_icon.png" alt="Mechanical Engineering" class="service-icon">
+                                                <h4 class="service-title">Mechanical Engineering</h4>
+                                                <p class="card-text">consectetur adipising elit. Dolor felism lectus gravida uoit. Sempr malesuada arcu facilisis amet sodales ornare.</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body text-center">
+                                                <img src="path_to_refinery_icon.png" alt="Petroleum Refinery" class="service-icon">
+                                                <h4 class="service-title">Petroleum Refinery</h4>
+                                                <p class="card-text">consectetur adipising elit. Dolor felism lectus gravida uoit. Sempr malesuada arcu facilisis amet sodales ornare.</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body text-center">
+                                                <img src="path_to_power_icon.png" alt="Power & Energy" class="service-icon">
+                                                <h4 class="service-title">Power & Energy</h4>
+                                                <p class="card-text">consectetur adipising elit. Dolor felism lectus gravida uoit. Sempr malesuada arcu facilisis amet sodales ornare.</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body text-center">
+                                                <img src="path_to_electrical_icon.png" alt="Electrical & Power" class="service-icon">
+                                                <h4 class="service-title">Electrical & Power</h4>
+                                                <p class="card-text">consectetur adipising elit. Dolor felism lectus gravida uoit. Sempr malesuada arcu facilisis amet sodales ornare.</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body text-center">
+                                                <img src="path_to_plumbing_icon.png" alt="Sanitary & Plumbing" class="service-icon">
+                                                <h4 class="service-title">Sanitary & Plumbing</h4>
+                                                <p class="card-text">consectetur adipising elit. Dolor felism lectus gravida uoit. Sempr malesuada arcu facilisis amet sodales ornare.</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body text-center">
+                                                <img src="path_to_construction_icon.png" alt="Industrial Construction" class="service-icon">
+                                                <h4 class="service-title">Industrial Construction</h4>
+                                                <p class="card-text">consectetur adipising elit. Dolor felism lectus gravida uoit. Sempr malesuada arcu facilisis amet sodales ornare.</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+        <section id="about-us2" class="container-fluid">
+                <div class="row align-items-center">
+                        <div class="col-lg-6 p-5">
+                                <h6 class="text-uppercase mb-4">
+                                        <span class="about-us">About Us</span></h6>
+                                <h1 class="mb-4">We're More than a <span class="highlight">Industrial</span> Company</h1>
+                                <p class="lead mb-4">Industry can dolor siot amet, constetur adiping elit. Commodo adipiscing erat aliquam mauris morbioliotion adipiscing vulputate. Hendrerit laoreet vivea sodales odio commodo vulputate nunc.</p>
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis scelerisque quam sit at. Enim leo, eget adipiscing sagittis nec. Facilisi suscipit mi suscipit pharetra penatibus sed integer at congue. Book senectus nibh placerat justo in ultricies. Nunc varius facilisis posuere consectetur mauris integer integer sed sollicitudin. Egestas tristique eget arcu mattis eros dictumst.</p>
+                                <button class="btn btn-outline-primary">Discover More</button>
+                        </div>
+                        <div class="col-lg-6 p-0">
+                                <img src="industrial-image.jpg" alt="Industrial workers" class="img-fluid">
+                        </div>
+                </div>
+        </section>
+
+        <section id="faq" class="container-fluid py-5">
+                <div class="row">
+                        <div class="col-lg-6">
+                                <div class="company-tag">SOLUTEK COMPANY</div>
+                                <h1 class="mt-4">Keeping Your Business <br>Safe and <span class="highlight">Available.</span></h1>
+                                <img src="meeting-image.jpg" alt="Business meeting" class="img-fluid rounded mt-4">
+                        </div>
+                        <div class="col-lg-6">
+                                <h2>A Comprehensive <span class="highlight">Guide.</span></h2>
+                                <p class="text-muted">Alternative innovation network environmental whiteboard pursue for premier methods empowerment go forward opportunities</p>
+
+                                <div class="accordion mt-4" id="faqAccordion">
+                                        <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                What Medical Services Do You Provide?
+                            </button>
+                                                </h2>
+                                                <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                        <div class="accordion-body">
+                                Appropriately promote enterprise-wide vortals throuh innovative information evolve go forward markets whereas synergistic applications power full sound quality vectors without equity invested best practices revolutionize enterprise-wide vortals through innovative.
+                            </div>
+                                                </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                What is your customer geography?
+                            </button>
+                                                </h2>
+                                                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                        <div class="accordion-body">
+                                Content for customer geography...
+                            </div>
+                                                </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                What are the main industries we serve?
+                            </button>
+                                                </h2>
+                                                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                                        <div class="accordion-body">
+                                Content for main industries served...
+                            </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+        <section id="three-item-carousel">
+                <div class="carousel-container">
+                        <div class="carousel">
+                                <img src="https://placehold.co/390x260" alt="Image 1">
+                                <img src="https://placehold.co/390x260" alt="Image 2">
+                                <img src="https://placehold.co/390x260" alt="Image 3">
+                                <img src="https://placehold.co/390x260" alt="Image 4">
+                                <img src="https://placehold.co/390x260" alt="Image 5">
+                                <img src="https://placehold.co/390x260" alt="Image 6">
+                                <img src="https://placehold.co/390x260" alt="Image 7">
+                                <img src="https://placehold.co/390x260" alt="Image 8">
+                                <img src="https://placehold.co/390x260" alt="Image 9">
+                        </div>
+                        <button class="carousel-btn prev">&lt;</button>
+                        <button class="carousel-btn next">&gt;</button>
+                </div>
+        </section>
+
+        <div id="about-us3" class="container-fluid p-0">
+                <section class="hero-section">
+                        <div class="container">
+                                <div class="row align-items-center">
+                                        <div class="col-lg-6 order-lg-2">
+                                                <img src="/api/placeholder/600/400" alt="Team collaborating" class="img-fluid hero-image mb-4 mb-lg-0">
+                                        </div>
+                                        <div class="col-lg-6 order-lg-1">
+                                                <h6 class="text-primary mb-3">ABOUT OUR COMPANY</h6>
+                                                <h1 class="display-4 fw-bold mb-4">The Only Source of Knowledge is Experience</h1>
+                                                <p class="lead mb-4">Appropriately empower dynamic leadership skills after business portals. Globally myocardinate interactive supply chains with distinctive quality vectors.</p>
+                                                <div class="d-flex flex-wrap gap-3">
+                                                        <div class="d-flex align-items-center me-4 mb-3">
+                                                                <img src="/api/placeholder/40/40" alt="Skills icon" class="me-2">
+                                                                <span>Provide Skills Services</span>
+                                                        </div>
+                                                        <div class="d-flex align-items-center mb-3">
+                                                                <img src="/api/placeholder/40/40" alt="Support icon" class="me-2">
+                                                                <span>Urgent Support For Clients</span>
+                                                        </div>
+                                                </div>
+                                                <div class="mt-4">
+                                                        <a href="#" class="btn btn-primary me-3 mb-3">CONTACT WITH US</a>
+                                                        <a href="#" class="btn btn-outline-primary mb-3">+58658645869</a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+
+                <section class="stats-section">
+                        <div class="container">
+                                <div class="row text-center">
+                                        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                                                <div class="stats-icon">📊</div>
+                                                <h2 class="fw-bold">858</h2>
+                                                <p>PROJECTS DONE</p>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                                                <div class="stats-icon">📱</div>
+                                                <h2 class="fw-bold">312</h2>
+                                                <p>MEDIA ACTIVITIES</p>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                                                <div class="stats-icon">👨‍💼</div>
+                                                <h2 class="fw-bold">135</h2>
+                                                <p>SKILLED EXPERTS</p>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                                <div class="stats-icon">😊</div>
+                                                <h2 class="fw-bold">2.3K</h2>
+                                                <p>HAPPY CLIENTS</p>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+        </div>
+
+        <section id="contact-us" class="contact-section">
+                <div class="container">
+                        <div class="row g-4">
+                                <div class="col-lg-7">
+                                        <div class="form-container">
+                                                <h2 class="mb-3">Leave A Reply</h2>
+                                                <p class="text-muted mb-4">Fill-up The Form and Message us of your amazing question</p>
+                                                <form>
+                                                        <div class="row g-3">
+                                                                <div class="col-md-6">
+                                                                        <div class="form-floating">
+                                                                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                                                                <label for="name">
+                                                                                        <i class="fas fa-user me-2"></i>Your Name</label>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                        <div class="form-floating">
+                                                                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                                                                <label for="email">
+                                                                                        <i class="fas fa-envelope me-2"></i>Your Email</label>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                        <div class="form-floating">
+                                                                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                                                                <label for="subject">Subject</label>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                        <div class="form-floating">
+                                                                                <textarea class="form-control" placeholder="Message" id="message" style="height: 150px"></textarea>
+                                                                                <label for="message">
+                                                                                        <i class="fas fa-comment me-2"></i>Message</label>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                        <button type="submit" class="btn btn-primary w-100">SUBMIT MESSAGE</button>
+                                                                </div>
+                                                        </div>
+                                                </form>
+                                        </div>
+                                </div>
+                                <div class="col-lg-5">
+                                        <div class="info-container">
+                                                <h2 class="mb-3">Office Information</h2>
+                                                <p class="text-muted mb-4">Completely recapitalize 24/7 communities via standards compliant metrics whereas.</p>
+                                                <div class="mb-4">
+                                                        <h5 class="mb-3">Phone Number & Email</h5>
+                                                        <div class="d-flex align-items-center mb-2">
+                                                                <div class="info-icon">
+                                                                        <i class="fas fa-phone text-primary"></i>
+                                                                </div>
+                                                                <div>
+                                                                        <p class="mb-0">(+65) - 48596 - 5789</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                                <div class="info-icon">
+                                                                        <i class="fas fa-envelope text-primary"></i>
+                                                                </div>
+                                                                <div>
+                                                                        <p class="mb-0">hello@bizan.com</p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="mb-4">
+                                                        <h5 class="mb-3">Our Office Address</h5>
+                                                        <div class="d-flex align-items-center">
+                                                                <div class="info-icon">
+                                                                        <i class="fas fa-map-marker-alt text-primary"></i>
+                                                                </div>
+                                                                <div>
+                                                                        <p class="mb-0">2690 Hilton Street Victoria Road,<br>New York, Canada</p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div>
+                                                        <h5 class="mb-3">Official Work Time</h5>
+                                                        <div class="d-flex align-items-center">
+                                                                <div class="info-icon">
+                                                                        <i class="fas fa-clock text-primary"></i>
+                                                                </div>
+                                                                <div>
+                                                                        <p class="mb-0">Monday - Friday: 09:00 - 20:00<br>Sunday & Saturday: 10:30 - 22:00</p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
         {% include 'components/cta.html' %}
 
 {% endblock %}
