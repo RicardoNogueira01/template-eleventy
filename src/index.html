@@ -12,6 +12,10 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/assets/css/index2.css"/>
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
 
@@ -78,7 +82,7 @@ eleventyNavigation:
     <!--                    Hero                      -->
     <!-- ============================================ -->
 
-    <section id="hero">
+    {# <section id="hero">
         <div class="cs-container">
             <div class="cs-flex-group">
                 <span class="cs-topper">mountain hiking society</span>
@@ -107,12 +111,30 @@ eleventyNavigation:
             <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
             <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
         </picture>
+    </section> #}
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="blueprint-bg"></div>
+        <div class="hero-content container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-7 col-md-8">
+                    <p class="welcome-text">Welcome to Willmor</p>
+                    <h1>Build a better<br>house <span class="highlight">for living</span></h1>
+                    <div>
+                        <button class="btn btn-primary btn-lg btn-custom">READ MORE</button>
+                        <button class="btn btn-outline-dark btn-lg btn-custom">CONTACT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ============================================ -->
     <!--                  Services                    -->
     <!-- ============================================ -->
-
+    {# 
     <section id="services" class="services">
         <!-- Get Icons From flaticon.com -->
         <div class="card border-0">
@@ -154,9 +176,45 @@ eleventyNavigation:
             <h2>Service 3</h2>
             <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
         </div>
+    </section> #}
+
+    <section id="services2" class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-2">OUR SERVICES</h1>
+            <div class="underline mb-4"></div>
+
+            <p class="text-center mb-5 w-50 m-auto">
+            With over 15 years experience and real focus on customer satisfaction, you can rely on us for your next renovation,
+            driveway sett or home repair. We provide a professional service for private and commercial customers.
+        </p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="https://placehold.co/390x260" alt="Interior Renovation" class="img-fluid service-img w-100">
+                    <h3 class="text-center mt-3 fs-5 fw-bold">INTERIOR RENOVATION</h3>
+                    <div class="underline my-4"></div>
+                    <p class="text-center fs-6">We can help you bring new life to existing rooms and develop unused spaces.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="https://placehold.co/390x260" alt="Design and Build" class="img-fluid service-img w-100">
+                    <h3 class="text-center mt-3 fs-5 fw-bold">DESIGN AND BUILD</h3>
+                    <div class="underline my-4"></div>
+                    <p class="text-center fs-6">From initial design and project specification to achieving a high end finish.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="https://placehold.co/390x260" alt="Tiling and Painting" class="img-fluid service-img w-100">
+                    <h3 class="text-center mt-3 fs-5 fw-bold">TILING AND PAINTING</h3>
+                    <div class="underline my-4"></div>
+                    <p class="text-center fs-6">We offer quality tiling and painting solutions for interior and exterior.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-company btn-lg text-light rounded-pill">VIEW ALL SERVICES</button>
+            </div>
+        </div>
+
     </section>
 
-    <!-- ============================================ -->
+    {# <!-- ============================================ -->
     <!--                 Side By Side                 -->
     <!-- ============================================ -->
 
@@ -203,12 +261,53 @@ eleventyNavigation:
                 <a href="/about" class="cs-button-solid">More About Us</a>
             </div>
         </div>
-    </section>
+    </section> #}
 
+    <!-- ============================================ -->
+    <!--                 RECENT PROJECTS              -->
+    <!-- ============================================ -->
+    <section id="recent-projects" class="container-fluid py-5">
+        <div class="w-50 m-auto">
+            <h1 class="text-center mb-2">RECENT PROJECTS</h1>
+            <div class="underline mb-4"></div>
+
+            <p class="text-center mb-5">
+            Here are a few of many projects we have completed for our customers. We provide a professional service
+            which includes consultation, free estimate, design, supply of materials and installation.
+        </p>
+        </div>
+
+        <div id="recentProjectsCarousel" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#recentProjectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#recentProjectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#recentProjectsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://placehold.co/350x230" class="d-block w-100" alt="Interior Design Project">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="https://placehold.co/350x230" class="d-block w-100" alt="Landscaping Project">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="https://placehold.co/350x230" class="d-block w-100" alt="Plumbing Project">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#recentProjectsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#recentProjectsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    {# 
     <!-- ============================================ -->
     <!--            Extra Content To Rank             -->
     <!-- ============================================ -->
-
     <section id="sbs-r">
         <div class="cs-container">
             <!-- Left Image Section -->
@@ -237,13 +336,80 @@ eleventyNavigation:
                 <a href="/blog" class="cs-button-solid">Read our Blog</a>
             </div>
         </div>
+    </section> #}
+
+    <!-- ============================================ -->
+    <!--                 ABOUT US                     -->
+    <!-- ============================================ -->
+    <section id="about-us" class="container py-5">
+        <div class="w-50 m-auto">
+            <h1 class="text-center mb-2">ABOUT US</h1>
+            <div class="underline mb-4"></div>
+            <p class="text-center mb-5">
+                                    We provide a professional renovation and installation services with a real focus on customer satisfaction.
+                                    Our installations are carried out by fully trained staff to the highest professional standards.
+                                </p>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col col-md-6 text-center mb-4 mb-md-0">
+                <img src="https://placehold.co/300" alt="Professional worker" class="object-fit-cover rounded-circle">
+            </div>
+            <div class="col col-md-6">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="icon-circle me-3">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div>
+                        <h3 class="mb-1">OVER 15 YEARS EXPERIENCE</h3>
+                        <p class="mb-0">We combine quality workmanship, superior knowledge and low prices to provide you with service unmatched by our competitors.</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-4">
+                    <div class="icon-circle me-3">
+                        <i class="fa-solid fa-paint-roller"></i>
+                    </div>
+                    <div>
+                        <h3 class="mb-1">BEST MATERIALS</h3>
+                        <p class="mb-0">We have the experience, personnel and resources to make the project run smoothly. We can ensure a job is done on time.</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="icon-circle me-3">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="mb-1">PROFESSIONAL STANDARDS</h3>
+                        <p class="mb-0">Work with us involves a carefully planned series of steps, centered around a schedule we stick to and daily communication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="three-item-carousel">
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="https://placehold.co/390x260" alt="Image 1">
+                <img src="https://placehold.co/390x260" alt="Image 2">
+                <img src="https://placehold.co/390x260" alt="Image 3">
+                <img src="https://placehold.co/390x260" alt="Image 4">
+                <img src="https://placehold.co/390x260" alt="Image 5">
+                <img src="https://placehold.co/390x260" alt="Image 6">
+                <img src="https://placehold.co/390x260" alt="Image 7">
+                <img src="https://placehold.co/390x260" alt="Image 8">
+                <img src="https://placehold.co/390x260" alt="Image 9">
+            </div>
+            <button class="carousel-btn prev">&lt;</button>
+            <button class="carousel-btn next">&gt;</button>
+        </div>
     </section>
 
     <!-- ============================================ -->
     <!--                   Gallery                    -->
     <!-- ============================================ -->
 
-    <section id="gallery">
+    {# <section id="gallery">
         <div class="cs-container">
             <span class="cs-topper">Our Portfolio</span>
             <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
@@ -309,13 +475,13 @@ eleventyNavigation:
             </div>
             <a href="/projects" class="cs-button-solid">View Full Gallery</a>
         </div>
-    </section>
+    </section> #}
 
     <!-- ============================================ -->
     <!--                   Reviews                    -->
     <!-- ============================================ -->
 
-    <section id="reviews">
+    {# <section id="reviews">
         <div class="cs-container">
             <span class="cs-topper">Our Reviews</span>
             <h2 class="cs-title">Words From Our Customers</h2>
@@ -382,7 +548,62 @@ eleventyNavigation:
             </ul>
             <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
         </div>
-    </section>
+    </section> #}
 
+    <!-- ============================================ -->
+    <!--                   FAQ                        -->
+    <!-- ============================================ -->
+    <section id="faq" class="container-fluid py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="company-tag">SOLUTEK COMPANY</div>
+                <h1 class="mt-4">Keeping Your Business <br>Safe and <span class="highlight">Available.</span></h1>
+                <img src="meeting-image.jpg" alt="Business meeting" class="img-fluid rounded mt-4">
+            </div>
+            <div class="col-lg-6">
+                <h2>A Comprehensive <span class="highlight">Guide.</span></h2>
+                <p class="text-muted">Alternative innovation network environmental whiteboard pursue for premier methods empowerment go forward opportunities</p>
+
+                <div class="accordion mt-4" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                What Medical Services Do You Provide?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Appropriately promote enterprise-wide vortals throuh innovative information evolve go forward markets whereas synergistic applications power full sound quality vectors without equity invested best practices revolutionize enterprise-wide vortals through innovative.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                What is your customer geography?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Content for customer geography...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                What are the main industries we serve?
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Content for main industries served...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     {% include 'components/cta.html' %}
 {% endblock %}

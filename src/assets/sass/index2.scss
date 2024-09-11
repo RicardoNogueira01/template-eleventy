@@ -1,4 +1,5 @@
 // @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+
 /*-- -------------------------- -->
 <---          Services 2        -->
 <--- -------------------------- -*/
@@ -8,10 +9,10 @@
                 object-fit: cover;
         }
 
-        .yellow-underline {
+        .underline {
                 width: 50px;
                 height: 3px;
-                background-color: #ffc107;
+                background-color: var(--company-color);
                 margin: 10px auto;
         }
 }
@@ -20,10 +21,10 @@
 <---      Recent Projects       -->
 <--- -------------------------- -*/
 #recent-projects {
-        .yellow-underline {
+        .underline {
                 width: 50px;
                 height: 3px;
-                background-color: #ffc107;
+                background-color: var(--company-color);
                 margin: 10px auto;
         }
 
@@ -37,10 +38,10 @@
 <---          About Us          -->
 <--- -------------------------- -*/
 #about-us {
-        .yellow-underline {
+        .underline {
                 width: 50px;
                 height: 3px;
-                background-color: #ffc107;
+                background-color: var(--company-color);
                 margin: 10px auto;
         }
 
@@ -68,10 +69,10 @@
 <---          Choose Us        -->
 <--- -------------------------- -*/
 #choose-us {
-        .yellow-underline {
+        .underline {
                 width: 50px;
                 height: 3px;
-                background-color: #ffc107;
+                background-color: var(--company-color);
                 margin: 10px auto;
         }
 
@@ -100,7 +101,7 @@
         .feature-underline {
                 width: 30px;
                 height: 2px;
-                background-color: #ffc107;
+                background-color: var(--company-color);
                 margin: 0 auto 15px;
         }
 
@@ -163,7 +164,7 @@
         }
 
         .orange-text {
-                color: #FF6B35;
+                color: var(--company-color);
         }
 }
 
@@ -204,7 +205,7 @@
         .company-tag {
                 display: inline-block;
                 background-color: #f8f9fa;
-                color: #ff6b35;
+                color: var(--company-color);
                 padding: 5px 15px;
                 border-radius: 20px;
                 font-weight: bold;
@@ -221,12 +222,12 @@
         }
 
         .highlight {
-                color: #ff6b35;
+                color: var(--company-color);
         }
 
         .accordion-button:not(.collapsed) {
                 background-color: #fff;
-                color: #ff6b35;
+                color: var(--company-color);
         }
 
         .accordion-button:focus {
@@ -354,5 +355,63 @@
                 align-items: center;
                 justify-content: center;
                 margin-right: 1rem;
+        }
+}
+
+#hero-section {
+        height: calc(100vh - 0px);
+        background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+        background-size: cover;
+        position: relative;
+
+        .hero-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: #000;
+                z-index: 2;
+        }
+
+        .hero-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.7);
+        }
+
+        .blueprint-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url('https://via.placeholder.com/500x500?text=Blueprint') repeat;
+                opacity: 0.1;
+                z-index: 1;
+        }
+
+        .btn-custom {
+                margin: 5px;
+        }
+
+        .welcome-text {
+                color: var(--company-color);
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+        }
+
+        h1 {
+                font-size: 3.5rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+        }
+
+        .highlight {
+                color: var(--company-color);
         }
 }

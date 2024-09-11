@@ -16,6 +16,7 @@
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
+        --company-color: #ff6b35;
 
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -62,6 +63,10 @@
     }
 
     // Button - can be replaced using CodeStitch's "Button" Stitches
+    .btn-company {
+        background-color: var(--company-color)
+    }
+
     .cs-button-solid {
         z-index: 1;
         position: relative;

@@ -11858,6 +11858,7 @@ textarea.form-control-lg {
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
+    --company-color: #ff6b35;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -11895,6 +11896,9 @@ textarea.form-control-lg {
     line-height: 1.5em;
     color: var(--bodyTextColor);
     text-align: inherit;
+  }
+  .btn-company {
+    background-color: var(--company-color);
   }
   .cs-button-solid {
     z-index: 1;
