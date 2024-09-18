@@ -11867,40 +11867,10 @@ textarea.form-control-lg {
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   }
-  .cs-topper {
-    display: block;
-    margin-bottom: 0.25rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: var(--topperFontSize);
-    line-height: 1.2em;
-    font-weight: 700;
-    color: var(--primary);
-    text-align: inherit;
-  }
-  .cs-title {
-    position: relative;
-    margin: 0 0 1rem 0;
-    max-width: 43.75rem;
-    font-size: var(--headerFontSize);
-    line-height: 1.2em;
-    font-weight: 900;
-    color: var(--headerColor);
-    text-align: inherit;
-  }
-  .cs-text {
-    margin: 0;
-    max-width: 40.625rem;
-    width: 100%;
-    font-size: var(--bodyFontSize);
-    line-height: 1.5em;
-    color: var(--bodyTextColor);
-    text-align: inherit;
-  }
   .btn-company {
     background-color: var(--company-color);
   }
-  .cs-button-solid {
+  .rn-button-solid {
     z-index: 1;
     position: relative;
     display: inline-block;
@@ -11917,13 +11887,13 @@ textarea.form-control-lg {
     transition-delay: 0.1s;
     text-align: center;
   }
-  .cs-button-solid:hover {
+  .rn-button-solid:hover {
     color: #fff;
   }
-  .cs-button-solid:hover:before {
+  .rn-button-solid:hover:before {
     width: 100%;
   }
-  .cs-button-solid:before {
+  .rn-button-solid:before {
     z-index: -1;
     position: absolute;
     top: 0;
@@ -11936,16 +11906,16 @@ textarea.form-control-lg {
     width: 0;
     transition: width 0.3s;
   }
-  .cs-hide-on-mobile {
+  .hide-on-mobile {
     display: none;
   }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  .cs-hide-on-mobile {
+  .hide-on-mobile {
     display: block;
   }
-  .cs-hide-on-desktop {
+  .hide-on-desktop {
     display: none;
   }
 }
@@ -12055,85 +12025,24 @@ textarea.form-control-lg {
   }
 }
 /*-- -------------------------- -->
-<---      Dark Mode Toggle      -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #dark-mode-toggle .cs-sun {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-  body.dark-mode #dark-mode-toggle .cs-moon {
-    opacity: 0;
-    transform: translate(-50%, -150%);
-    fill: #fff;
-  }
-  #dark-mode-toggle {
-    z-index: 1000;
-    position: absolute;
-    top: 0.625rem;
-    right: 4.375rem;
-    display: block;
-    border: none;
-    background: transparent;
-    height: 3rem;
-    width: 3rem;
-    overflow: hidden;
-    padding: 0;
-  }
-  #dark-mode-toggle img,
-  #dark-mode-toggle svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 1.25rem;
-    width: 1.25rem;
-    pointer-events: none;
-  }
-  #dark-mode-toggle .cs-moon {
-    z-index: 2;
-    transition: transform 0.3s, opacity 0.3s;
-  }
-  #dark-mode-toggle .cs-sun {
-    z-index: 1;
-    opacity: 0;
-    transform: translate(-50%, 100%);
-    transition: transform 0.3s, opacity 0.3s;
-  }
-}
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #dark-mode-toggle {
-    position: relative;
-    top: auto;
-    right: auto;
-    transform: none;
-    margin: 0;
-  }
-  #dark-mode-toggle:hover {
-    cursor: pointer;
-  }
-}
-/*-- -------------------------- -->
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
-  body.cs-open {
+  body.rn-open {
     overflow: hidden;
   }
-  #cs-contact-info {
+  #rn-contact-info {
     flex-wrap: wrap;
     justify-content: center;
   }
-  #cs-contact-info .cs-contact-info {
+  #rn-contact-info .rn-contact-info {
     flex-wrap: wrap;
     justify-content: center;
   }
-  #cs-navigation {
+  #rn-navigation {
     z-index: 10000;
-    position: fixed;
+    position: static;
     background-color: #fff;
     width: 100%;
     /* prevents padding from affecting height and width */
@@ -12143,13 +12052,13 @@ textarea.form-control-lg {
     font-family: "Roboto", "Arial", sans-serif;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
-  #cs-navigation .cs-container {
+  #rn-navigation .rn-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
   }
-  #cs-navigation .cs-logo {
+  #rn-navigation .rn-logo {
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -12162,7 +12071,7 @@ textarea.form-control-lg {
     box-sizing: border-box;
     padding: 0;
   }
-  #cs-navigation .cs-logo img {
+  #rn-navigation .rn-logo img {
     height: 100%;
     width: 100%;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
@@ -12170,7 +12079,7 @@ textarea.form-control-lg {
     /* places the image to the left edge of the parent */
     object-position: left;
   }
-  #cs-navigation .cs-toggle {
+  #rn-navigation .rn-toggle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12182,27 +12091,27 @@ textarea.form-control-lg {
     /* 44px - 48px */
     width: clamp(2.75rem, 6vw, 3rem);
   }
-  #cs-navigation .cs-active .cs-line1 {
+  #rn-navigation .rn-active .rn-line1 {
     top: 50%;
     transform: translate(-50%, -50%) rotate(225deg);
   }
-  #cs-navigation .cs-active .cs-line2 {
+  #rn-navigation .rn-active .rn-line2 {
     top: 50%;
     transform: translate(-50%, -50%) translateY(0) rotate(-225deg);
     transform-origin: center;
   }
-  #cs-navigation .cs-active .cs-line3 {
+  #rn-navigation .rn-active .rn-line3 {
     bottom: 100%;
     opacity: 0;
   }
-  #cs-navigation .cs-box {
+  #rn-navigation .rn-box {
     position: relative;
     /* 14px - 16px */
     height: clamp(0.875rem, 1.5vw, 1rem);
     /* 24px - 28px */
     width: clamp(1.5rem, 2vw, 1.75rem);
   }
-  #cs-navigation .cs-line {
+  #rn-navigation .rn-line {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -12211,7 +12120,7 @@ textarea.form-control-lg {
     height: 2px;
     width: 100%;
   }
-  #cs-navigation .cs-line1 {
+  #rn-navigation .rn-line1 {
     top: 0;
     transition: transform 0.5s, top 0.3s, left 0.3s;
     animation-duration: 0.7s;
@@ -12220,7 +12129,7 @@ textarea.form-control-lg {
     animation-fill-mode: forwards;
     transform-origin: center;
   }
-  #cs-navigation .cs-line2 {
+  #rn-navigation .rn-line2 {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     transition: top 0.3s, left 0.3s, transform 0.5s;
@@ -12229,11 +12138,11 @@ textarea.form-control-lg {
     animation-direction: normal;
     animation-fill-mode: forwards;
   }
-  #cs-navigation .cs-line3 {
+  #rn-navigation .rn-line3 {
     bottom: 0;
     transition: bottom 0.3s, opacity 0.3s;
   }
-  #cs-navigation .cs-ul-wrapper {
+  #rn-navigation .rn-ul-wrapper {
     z-index: -1;
     position: absolute;
     top: 100%;
@@ -12249,7 +12158,7 @@ textarea.form-control-lg {
     box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
     transform-origin: top right;
   }
-  #cs-navigation .cs-ul {
+  #rn-navigation .rn-ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -12263,7 +12172,7 @@ textarea.form-control-lg {
     padding: 3rem clamp(1.75rem, 3vw, 2.5rem) 2rem 4.375rem;
     gap: 1.25rem;
   }
-  #cs-navigation .cs-li {
+  #rn-navigation .rn-li {
     opacity: 0;
     /* transition from these values */
     transform: translateX(-2.5rem);
@@ -12273,34 +12182,34 @@ textarea.form-control-lg {
     transition: transform 0.6s, opacity 0.9s;
     text-align: right;
   }
-  #cs-navigation .cs-li:nth-of-type(1) {
+  #rn-navigation .rn-li:nth-of-type(1) {
     transition-delay: 0.05s;
   }
-  #cs-navigation .cs-li:nth-of-type(2) {
+  #rn-navigation .rn-li:nth-of-type(2) {
     transition-delay: 0.1s;
   }
-  #cs-navigation .cs-li:nth-of-type(3) {
+  #rn-navigation .rn-li:nth-of-type(3) {
     transition-delay: 0.15s;
   }
-  #cs-navigation .cs-li:nth-of-type(4) {
+  #rn-navigation .rn-li:nth-of-type(4) {
     transition-delay: 0.2s;
   }
-  #cs-navigation .cs-li:nth-of-type(5) {
+  #rn-navigation .rn-li:nth-of-type(5) {
     transition-delay: 0.25s;
   }
-  #cs-navigation .cs-li:nth-of-type(6) {
+  #rn-navigation .rn-li:nth-of-type(6) {
     transition-delay: 0.3s;
   }
-  #cs-navigation .cs-li:nth-of-type(7) {
+  #rn-navigation .rn-li:nth-of-type(7) {
     transition-delay: 0.35s;
   }
-  #cs-navigation .cs-li:nth-of-type(8) {
+  #rn-navigation .rn-li:nth-of-type(8) {
     transition-delay: 0.4s;
   }
-  #cs-navigation .cs-li:nth-of-type(9) {
+  #rn-navigation .rn-li:nth-of-type(9) {
     transition-delay: 0.45s;
   }
-  #cs-navigation .cs-li-link {
+  #rn-navigation .rn-li-link {
     position: relative;
     display: inline-block;
     margin: 0;
@@ -12310,7 +12219,7 @@ textarea.form-control-lg {
     line-height: 1.2em;
     color: var(--headerColor);
   }
-  #cs-navigation .cs-li-link:before {
+  #rn-navigation .rn-li-link:before {
     position: absolute;
     bottom: -0.125rem;
     left: 0;
@@ -12322,13 +12231,13 @@ textarea.form-control-lg {
     height: 1px;
     width: 100%;
   }
-  #cs-navigation .cs-li-link.cs-active:before {
+  #rn-navigation .rn-li-link.rn-active:before {
     display: block;
   }
-  #cs-navigation .cs-button-solid {
+  #rn-navigation .rn-button-solid {
     display: none;
   }
-  #cs-navigation:before {
+  #rn-navigation:before {
     z-index: -11;
     position: absolute;
     top: 100%;
@@ -12344,38 +12253,19 @@ textarea.form-control-lg {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
-  #cs-navigation.cs-active .cs-ul-wrapper {
+  #rn-navigation.rn-active .rn-ul-wrapper {
     opacity: 1;
     visibility: visible;
     transform: scaleX(1);
     transition-delay: 0.2s;
   }
-  #cs-navigation.cs-active .cs-li {
+  #rn-navigation.rn-active .rn-li {
     opacity: 1;
     transform: translateX(0);
   }
-  #cs-navigation.cs-active:before {
+  #rn-navigation.rn-active:before {
     opacity: 1;
     width: 100%;
-  }
-}
-/* Dark Mode */
-@media only screen and (max-width: 63.9375rem) {
-  body.dark-mode #cs-navigation {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it white */
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-navigation .cs-line {
-    background-color: #fff;
-  }
-  body.dark-mode #cs-navigation .cs-ul-wrapper {
-    background-color: var(--medium);
-  }
-  body.dark-mode #cs-navigation .cs-li-link {
-    color: var(--bodyTextColorWhite);
   }
 }
 /*-- -------------------------- -->
@@ -12383,15 +12273,15 @@ textarea.form-control-lg {
 <--- -------------------------- -*/
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
-  #cs-navigation .cs-dropdown {
+  #rn-navigation .rn-dropdown {
     position: relative;
     color: var(--bodyTextColorWhite);
   }
-  #cs-navigation .cs-dropdown .cs-li-link {
+  #rn-navigation .rn-dropdown .rn-li-link {
     position: relative;
     transition: opacity 0.3s;
   }
-  #cs-navigation .cs-dropdown.cs-active .cs-drop-ul {
+  #rn-navigation .rn-dropdown.rn-active .rn-drop-ul {
     visibility: visible;
     opacity: 1;
     transform: scale(1);
@@ -12399,10 +12289,10 @@ textarea.form-control-lg {
     height: auto;
     padding: 1.5rem;
   }
-  #cs-navigation .cs-dropdown.cs-active .cs-drop-link {
+  #rn-navigation .rn-dropdown.rn-active .rn-drop-link {
     opacity: 1;
   }
-  #cs-navigation .cs-dropdown-button {
+  #rn-navigation .rn-dropdown-button {
     border: none;
     background-color: transparent;
     font-family: inherit;
@@ -12410,7 +12300,7 @@ textarea.form-control-lg {
     cursor: pointer;
     appearance: none;
   }
-  #cs-navigation .cs-drop-icon {
+  #rn-navigation .rn-drop-icon {
     position: absolute;
     top: 50%;
     right: -1.25rem;
@@ -12418,7 +12308,7 @@ textarea.form-control-lg {
     height: auto;
     width: 0.9375rem;
   }
-  #cs-navigation .cs-drop-ul {
+  #rn-navigation .rn-drop-ul {
     visibility: hidden;
     opacity: 0;
     transform: scale(0);
@@ -12437,11 +12327,11 @@ textarea.form-control-lg {
     gap: 0.75rem;
     transform-origin: top right;
   }
-  #cs-navigation .cs-drop-li {
+  #rn-navigation .rn-drop-li {
     list-style: none;
     text-align: inherit;
   }
-  #cs-navigation .cs-li-link.cs-drop-link {
+  #rn-navigation .rn-li-link.rn-drop-link {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 2vw, 1.25rem);
     color: #fff;
@@ -12449,22 +12339,22 @@ textarea.form-control-lg {
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #cs-navigation .cs-dropdown {
+  #rn-navigation .rn-dropdown {
     position: relative;
   }
-  #cs-navigation .cs-dropdown.cs-active, #cs-navigation .cs-dropdown:hover {
+  #rn-navigation .rn-dropdown.rn-active, #rn-navigation .rn-dropdown:hover {
     cursor: pointer;
   }
-  #cs-navigation .cs-dropdown.cs-active .cs-drop-ul, #cs-navigation .cs-dropdown:hover .cs-drop-ul {
+  #rn-navigation .rn-dropdown.rn-active .rn-drop-ul, #rn-navigation .rn-dropdown:hover .rn-drop-ul {
     visibility: visible;
     opacity: 1;
     transform: scaleY(1);
   }
-  #cs-navigation .cs-dropdown.cs-active .cs-drop-li, #cs-navigation .cs-dropdown:hover .cs-drop-li {
+  #rn-navigation .rn-dropdown.rn-active .rn-drop-li, #rn-navigation .rn-dropdown:hover .rn-drop-li {
     opacity: 1;
     transform: translateY(0);
   }
-  #cs-navigation .cs-dropdown-button {
+  #rn-navigation .rn-dropdown-button {
     border: none;
     background-color: transparent;
     font-family: inherit;
@@ -12472,14 +12362,14 @@ textarea.form-control-lg {
     cursor: pointer;
     appearance: none;
   }
-  #cs-navigation .cs-drop-icon {
+  #rn-navigation .rn-drop-icon {
     display: inline-block;
     height: auto;
     width: 0.9375rem;
   }
-  #cs-navigation .cs-drop-ul {
+  #rn-navigation .rn-drop-ul {
     z-index: -100;
-    /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
+    /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the rn-drop-li so they don't have weird scattered animations */
     position: absolute;
     top: 100%;
     visibility: hidden;
@@ -12495,7 +12385,7 @@ textarea.form-control-lg {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 16px;
     transform-origin: top;
   }
-  #cs-navigation .cs-drop-li {
+  #rn-navigation .rn-drop-li {
     opacity: 0;
     transform: translateY(-0.625rem);
     display: block;
@@ -12507,46 +12397,46 @@ textarea.form-control-lg {
     color: var(--bodyTextColor);
     transition: opacity 0.6s, transform 0.6s;
   }
-  #cs-navigation .cs-drop-li:nth-of-type(1) {
+  #rn-navigation .rn-drop-li:nth-of-type(1) {
     transition-delay: 0.05s;
   }
-  #cs-navigation .cs-drop-li:nth-of-type(2) {
+  #rn-navigation .rn-drop-li:nth-of-type(2) {
     transition-delay: 0.1s;
   }
-  #cs-navigation .cs-drop-li:nth-of-type(3) {
+  #rn-navigation .rn-drop-li:nth-of-type(3) {
     transition-delay: 0.15s;
   }
-  #cs-navigation .cs-drop-li:nth-of-type(4) {
+  #rn-navigation .rn-drop-li:nth-of-type(4) {
     transition-delay: 0.2s;
   }
-  #cs-navigation .cs-drop-li:nth-of-type(5) {
+  #rn-navigation .rn-drop-li:nth-of-type(5) {
     transition-delay: 0.25s;
   }
-  #cs-navigation .cs-drop-li:nth-of-type(6) {
+  #rn-navigation .rn-drop-li:nth-of-type(6) {
     transition-delay: 0.3s;
   }
-  #cs-navigation .cs-drop-li:nth-of-type(7) {
+  #rn-navigation .rn-drop-li:nth-of-type(7) {
     transition-delay: 0.35s;
   }
-  #cs-navigation .cs-drop-li:nth-of-type(8) {
+  #rn-navigation .rn-drop-li:nth-of-type(8) {
     transition-delay: 0.4s;
   }
-  #cs-navigation .cs-drop-li:nth-of-type(9) {
+  #rn-navigation .rn-drop-li:nth-of-type(9) {
     transition-delay: 0.45s;
   }
-  #cs-navigation .cs-drop-li:nth-of-type(10) {
+  #rn-navigation .rn-drop-li:nth-of-type(10) {
     transition-delay: 0.5s;
   }
-  #cs-navigation .cs-drop-li:nth-of-type(11) {
+  #rn-navigation .rn-drop-li:nth-of-type(11) {
     transition-delay: 0.55s;
   }
-  #cs-navigation .cs-drop-li:nth-of-type(12) {
+  #rn-navigation .rn-drop-li:nth-of-type(12) {
     transition-delay: 0.6s;
   }
-  #cs-navigation .cs-drop-li:nth-of-type(13) {
+  #rn-navigation .rn-drop-li:nth-of-type(13) {
     transition-delay: 0.65s;
   }
-  #cs-navigation .cs-li-link.cs-drop-link {
+  #rn-navigation .rn-li-link.rn-drop-link {
     display: block;
     width: 100%;
     /* prevents padding from affecting height and width */
@@ -12559,28 +12449,15 @@ textarea.form-control-lg {
     color: var(--bodyTextColor);
     transition: color 0.3s, background-color 0.3s;
   }
-  #cs-navigation .cs-li-link.cs-drop-link:hover {
+  #rn-navigation .rn-li-link.rn-drop-link:hover {
     background-color: #f7f7f7;
   }
-  #cs-navigation .cs-li-link.cs-drop-link:focus-visible {
+  #rn-navigation .rn-li-link.rn-drop-link:focus-visible {
     outline: 2px solid currentColor;
     outline-offset: -4px;
   }
-  #cs-navigation .cs-li-link.cs-drop-link:before {
+  #rn-navigation .rn-li-link.rn-drop-link:before {
     display: none;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #cs-navigation .cs-drop-ul {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-li-link.cs-drop-link:hover {
-    background-color: var(--medium);
-  }
-  body.dark-mode #cs-navigation .cs-drop-icon {
-    /* turns it white */
-    filter: grayscale(1) brightness(1000%);
   }
 }
 /*-- -------------------------- -->
@@ -12588,10 +12465,10 @@ textarea.form-control-lg {
 <--- -------------------------- -*/
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #cs-header-banner {
+  #rn-header-banner {
     z-index: 10000;
     width: 100%;
-    position: fixed;
+    position: sa;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     min-height: 60px;
     background-color: #f8f8f8;
@@ -12602,7 +12479,7 @@ textarea.form-control-lg {
     top: 0;
     border: 0;
   }
-  #cs-header-banner .cs-container {
+  #rn-header-banner .rn-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -12611,43 +12488,43 @@ textarea.form-control-lg {
     width: 100%;
     gap: 1.5rem;
   }
-  #cs-header-banner .cs-contact-info {
+  #rn-header-banner .rn-contact-info {
     display: flex;
     align-items: center;
     gap: 20px;
   }
-  #cs-header-banner .cs-contact-info {
+  #rn-header-banner .rn-contact-info {
     display: flex;
     align-items: center;
     gap: 20px;
   }
-  #cs-header-banner .cs-contact-item {
+  #rn-header-banner .rn-contact-item {
     display: flex;
     align-items: center;
     gap: 5px;
     color: #666;
     font-size: 14px;
   }
-  #cs-header-banner .cs-social-icons {
+  #rn-header-banner .rn-social-icons {
     display: flex;
     gap: 10px;
     margin-left: 20px;
   }
-  #cs-header-banner .cs-social-icon {
+  #rn-header-banner .rn-social-icon {
     width: 16px;
     height: 16px;
     background-color: #666;
     border-radius: 50%;
   }
-  #cs-header-banner .cs-search-icon {
+  #rn-header-banner .rn-search-icon {
     width: 16px;
     height: 16px;
     background-color: #666;
     margin-left: 20px;
   }
-  #cs-navigation {
+  #rn-navigation {
     z-index: 10000;
-    position: fixed;
+    position: static;
     background-color: #fff;
     width: 100%;
     /* prevents padding from affecting height and width */
@@ -12658,7 +12535,7 @@ textarea.form-control-lg {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     top: 60px;
   }
-  #cs-navigation .cs-container {
+  #rn-navigation .rn-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -12667,10 +12544,10 @@ textarea.form-control-lg {
     width: 100%;
     gap: 1.5rem;
   }
-  #cs-navigation .cs-toggle {
+  #rn-navigation .rn-toggle {
     display: none;
   }
-  #cs-navigation .cs-logo {
+  #rn-navigation .rn-logo {
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -12682,13 +12559,13 @@ textarea.form-control-lg {
     width: 18.4%;
     padding: 0;
   }
-  #cs-navigation .cs-logo img {
+  #rn-navigation .rn-logo img {
     height: 100%;
     width: 100%;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
-  #cs-navigation .cs-ul {
+  #rn-navigation .rn-ul {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -12698,13 +12575,13 @@ textarea.form-control-lg {
     /* 20px - 36px */
     gap: clamp(1.25rem, 2.6vw, 2.25rem);
   }
-  #cs-navigation .cs-li {
+  #rn-navigation .rn-li {
     padding: 2rem 0;
     list-style: none;
     /* prevent flexbox from squishing it */
     flex: none;
   }
-  #cs-navigation .cs-li-link {
+  #rn-navigation .rn-li-link {
     position: relative;
     display: block;
     margin: 0;
@@ -12714,10 +12591,10 @@ textarea.form-control-lg {
     line-height: 1.5em;
     color: var(--bodyTextColor);
   }
-  #cs-navigation .cs-li-link:hover:before {
+  #rn-navigation .rn-li-link:hover:before {
     width: 100%;
   }
-  #cs-navigation .cs-li-link:before {
+  #rn-navigation .rn-li-link:before {
     position: absolute;
     bottom: 0rem;
     left: 0;
@@ -12730,24 +12607,8 @@ textarea.form-control-lg {
     width: 0%;
     transition: width 0.3s;
   }
-  #cs-navigation .cs-li-link.cs-active:before {
+  #rn-navigation .rn-li-link.rn-active:before {
     width: 100%;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 64rem) {
-  body.dark-mode #cs-navigation {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it turn white */
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-navigation .cs-li-link {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-navigation .cs-li-link:before {
-    background-color: var(--primaryLight);
   }
 }
 /*-- -------------------------- -->
@@ -12946,12 +12807,6 @@ textarea.form-control-lg {
     width: 125rem;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #cta:after {
-    display: none;
-  }
-}
 /*-- -------------------------- -->
 <---           Footer           -->
 <--- -------------------------- -*/
@@ -13059,7 +12914,7 @@ textarea.form-control-lg {
     display: flex;
     justify-content: center;
   }
-  #footer .right-section .cs-button-solid {
+  #footer .right-section .rn-button-solid {
     margin: 0;
     height: 3.3125rem;
     width: 15.625rem;
@@ -13155,12 +13010,6 @@ textarea.form-control-lg {
   }
   #footer .credit .copyright {
     display: inline-block;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #footer {
-    background: #061623;
   }
 }
 

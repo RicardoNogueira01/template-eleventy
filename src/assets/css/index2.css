@@ -294,7 +294,7 @@
 }
 
 #hero-section {
-  height: calc(100vh - 0px);
+  height: calc(100vh - 149px);
   background: url("https://via.placeholder.com/1920x1080") no-repeat center center;
   background-size: cover;
   position: relative;

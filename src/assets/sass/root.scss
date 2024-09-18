@@ -28,46 +28,13 @@
         --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     }
 
-    // Text styles - can be replaced using CodeStitch's "Content Flair" Stitches
-    .cs-topper {
-        display: block;
-        margin-bottom: 0.25rem;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        font-size: var(--topperFontSize);
-        line-height: 1.2em;
-        font-weight: 700;
-        color: var(--primary);
-        text-align: inherit;
-    }
-
-    .cs-title {
-        position: relative;
-        margin: 0 0 1rem 0;
-        max-width: 43.75rem;
-        font-size: var(--headerFontSize);
-        line-height: 1.2em;
-        font-weight: 900;
-        color: var(--headerColor);
-        text-align: inherit;
-    }
-
-    .cs-text {
-        margin: 0;
-        max-width: 40.625rem;
-        width: 100%;
-        font-size: var(--bodyFontSize);
-        line-height: 1.5em;
-        color: var(--bodyTextColor);
-        text-align: inherit;
-    }
-
-    // Button - can be replaced using CodeStitch's "Button" Stitches
+    // Text styles
+    // Button
     .btn-company {
         background-color: var(--company-color)
     }
 
-    .cs-button-solid {
+    .rn-button-solid {
         z-index: 1;
         position: relative;
         display: inline-block;
@@ -111,18 +78,18 @@
         }
     }
 
-    .cs-hide-on-mobile {
+    .hide-on-mobile {
         display: none;
     }
 }
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    .cs-hide-on-mobile {
+    .hide-on-mobile {
         display: block;
     }
 
-    .cs-hide-on-desktop {
+    .hide-on-desktop {
         display: none;
     }
 }
@@ -255,84 +222,6 @@
     }
 }
 
-/*-- -------------------------- -->
-<---      Dark Mode Toggle      -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #dark-mode-toggle {
-            .cs-sun {
-                opacity: 1;
-                transform: translate(-50%, -50%);
-            }
-
-            .cs-moon {
-                opacity: 0;
-                transform: translate(-50%, -150%);
-                fill: #fff;
-            }
-        }
-    }
-
-    #dark-mode-toggle {
-        z-index: 1000;
-        position: absolute;
-        top: calc(10 / 16 * 1rem);
-        right: calc(70 / 16 * 1rem);
-        display: block;
-        border: none;
-        background: transparent;
-        height: calc(48 / 16 * 1rem);
-        width: calc(48 / 16 * 1rem);
-        overflow: hidden;
-        padding: 0;
-
-        img,
-        svg {
-            //center image inside button
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            height: calc(20 / 16 * 1rem);
-            width: calc(20 / 16 * 1rem);
-            pointer-events: none;
-        }
-
-        .cs-moon {
-            z-index: 2;
-            // Transition properties
-            transition: transform 0.3s, opacity 0.3s;
-
-            // fill: yellow; --> uncomment to change the color of the moon if needed
-        }
-
-        .cs-sun {
-            z-index: 1;
-            opacity: 0;
-            // Transition property
-            transform: translate(-50%, 100%);
-            transition: transform 0.3s, opacity 0.3s;
-        }
-    }
-}
-
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #dark-mode-toggle {
-        position: relative;
-        top: auto;
-        right: auto;
-        transform: none;
-        margin: 0;
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
-}
 
 /*-- -------------------------- -->
 <---     Mobile Navigation      -->
@@ -341,24 +230,24 @@
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
     body {
-        &.cs-open {
+        &.rn-open {
             overflow: hidden;
         }
     }
 
-    #cs-contact-info {
+    #rn-contact-info {
         flex-wrap: wrap;
         justify-content: center;
 
-        .cs-contact-info {
+        .rn-contact-info {
             flex-wrap: wrap;
             justify-content: center;
         }
     }
 
-    #cs-navigation {
+    #rn-navigation {
         z-index: 10000;
-        position: fixed;
+        position: static;
         background-color: #fff;
         width: 100%;
         /* prevents padding from affecting height and width */
@@ -368,14 +257,14 @@
         font-family: "Roboto", "Arial", sans-serif;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-        .cs-container {
+        .rn-container {
             display: flex;
             justify-content: flex-end;
             align-items: center;
             width: 100%;
         }
 
-        .cs-logo {
+        .rn-logo {
             z-index: 10;
             display: flex;
             justify-content: center;
@@ -398,7 +287,7 @@
             }
         }
 
-        .cs-toggle {
+        .rn-toggle {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -411,25 +300,25 @@
             width: clamp(2.75rem, 6vw, 3rem);
         }
 
-        .cs-active {
-            .cs-line1 {
+        .rn-active {
+            .rn-line1 {
                 top: 50%;
                 transform: translate(-50%, -50%) rotate(225deg);
             }
 
-            .cs-line2 {
+            .rn-line2 {
                 top: 50%;
                 transform: translate(-50%, -50%) translateY(0) rotate(-225deg);
                 transform-origin: center;
             }
 
-            .cs-line3 {
+            .rn-line3 {
                 bottom: 100%;
                 opacity: 0;
             }
         }
 
-        .cs-box {
+        .rn-box {
             position: relative;
             /* 14px - 16px */
             height: clamp(0.875rem, 1.5vw, 1rem);
@@ -437,7 +326,7 @@
             width: clamp(1.5rem, 2vw, 1.75rem);
         }
 
-        .cs-line {
+        .rn-line {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -447,7 +336,7 @@
             width: 100%;
         }
 
-        .cs-line1 {
+        .rn-line1 {
             top: 0;
             transition: transform 0.5s, top 0.3s, left 0.3s;
             animation-duration: 0.7s;
@@ -457,7 +346,7 @@
             transform-origin: center;
         }
 
-        .cs-line2 {
+        .rn-line2 {
             top: 50%;
             transform: translateX(-50%) translateY(-50%);
             transition: top 0.3s, left 0.3s, transform 0.5s;
@@ -467,12 +356,12 @@
             animation-fill-mode: forwards;
         }
 
-        .cs-line3 {
+        .rn-line3 {
             bottom: 0;
             transition: bottom 0.3s, opacity 0.3s;
         }
 
-        .cs-ul-wrapper {
+        .rn-ul-wrapper {
             z-index: -1;
             position: absolute;
             top: 100%;
@@ -489,7 +378,7 @@
             transform-origin: top right;
         }
 
-        .cs-ul {
+        .rn-ul {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -504,7 +393,7 @@
             gap: calc(20 / 16 * 1rem);
         }
 
-        .cs-li {
+        .rn-li {
             opacity: 0;
             /* transition from these values */
             transform: translateX(calc(-40 / 16 * 1rem));
@@ -551,7 +440,7 @@
             }
         }
 
-        .cs-li-link {
+        .rn-li-link {
             position: relative;
             display: inline-block;
             margin: 0;
@@ -574,14 +463,14 @@
                 width: 100%;
             }
 
-            &.cs-active {
+            &.rn-active {
                 &:before {
                     display: block;
                 }
             }
         }
 
-        .cs-button-solid {
+        .rn-button-solid {
             display: none;
         }
 
@@ -602,15 +491,15 @@
             backdrop-filter: blur(10px);
         }
 
-        &.cs-active {
-            .cs-ul-wrapper {
+        &.rn-active {
+            .rn-ul-wrapper {
                 opacity: 1;
                 visibility: visible;
                 transform: scaleX(1);
                 transition-delay: 0.2s;
             }
 
-            .cs-li {
+            .rn-li {
                 opacity: 1;
                 transform: translateX(0);
             }
@@ -623,31 +512,6 @@
     }
 }
 
-/* Dark Mode */
-@media only screen and (max-width: 63.9375rem) {
-    body.dark-mode {
-        #cs-navigation {
-            background-color: var(--dark);
-
-            .cs-logo {
-                /* makes it white */
-                filter: grayscale(1) brightness(1000%);
-            }
-
-            .cs-line {
-                background-color: #fff;
-            }
-
-            .cs-ul-wrapper {
-                background-color: var(--medium);
-            }
-
-            .cs-li-link {
-                color: var(--bodyTextColorWhite);
-            }
-        }
-    }
-}
 
 /*-- -------------------------- -->
 <---     Navigation Dropdown    -->
@@ -655,18 +519,18 @@
 
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
-    #cs-navigation {
-        .cs-dropdown {
+    #rn-navigation {
+        .rn-dropdown {
             position: relative;
             color: var(--bodyTextColorWhite);
 
-            .cs-li-link {
+            .rn-li-link {
                 position: relative;
                 transition: opacity 0.3s;
             }
 
-            &.cs-active {
-                .cs-drop-ul {
+            &.rn-active {
+                .rn-drop-ul {
                     visibility: visible;
                     opacity: 1;
                     transform: scale(1);
@@ -675,13 +539,13 @@
                     padding: calc(24 / 16 * 1rem);
                 }
 
-                .cs-drop-link {
+                .rn-drop-link {
                     opacity: 1;
                 }
             }
         }
 
-        .cs-dropdown-button {
+        .rn-dropdown-button {
             border: none;
             background-color: transparent;
             font-family: inherit;
@@ -690,7 +554,7 @@
             appearance: none;
         }
 
-        .cs-drop-icon {
+        .rn-drop-icon {
             position: absolute;
             top: 50%;
             right: calc(-20 / 16 * 1rem);
@@ -699,7 +563,7 @@
             width: calc(15 / 16 * 1rem);
         }
 
-        .cs-drop-ul {
+        .rn-drop-ul {
             visibility: hidden;
             opacity: 0;
             transform: scale(0);
@@ -719,13 +583,13 @@
             transform-origin: top right;
         }
 
-        .cs-drop-li {
+        .rn-drop-li {
             list-style: none;
             text-align: inherit;
         }
 
-        .cs-li-link {
-            &.cs-drop-link {
+        .rn-li-link {
+            &.rn-drop-link {
                 /* 14px - 16px */
                 font-size: clamp(0.875rem, 2vw, 1.25rem);
                 color: #fff;
@@ -736,28 +600,28 @@
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #cs-navigation {
-        .cs-dropdown {
+    #rn-navigation {
+        .rn-dropdown {
             position: relative;
 
-            &.cs-active,
+            &.rn-active,
             &:hover {
                 cursor: pointer;
 
-                .cs-drop-ul {
+                .rn-drop-ul {
                     visibility: visible;
                     opacity: 1;
                     transform: scaleY(1);
                 }
 
-                .cs-drop-li {
+                .rn-drop-li {
                     opacity: 1;
                     transform: translateY(0);
                 }
             }
         }
 
-        .cs-dropdown-button {
+        .rn-dropdown-button {
             border: none;
             background-color: transparent;
             font-family: inherit;
@@ -766,15 +630,15 @@
             appearance: none;
         }
 
-        .cs-drop-icon {
+        .rn-drop-icon {
             display: inline-block;
             height: auto;
             width: calc(15 / 16 * 1rem);
         }
 
-        .cs-drop-ul {
+        .rn-drop-ul {
             z-index: -100;
-            /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
+            /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the rn-drop-li so they don't have weird scattered animations */
             // columns: 2;
             position: absolute;
             top: 100%;
@@ -792,7 +656,7 @@
             transform-origin: top;
         }
 
-        .cs-drop-li {
+        .rn-drop-li {
             opacity: 0;
             transform: translateY(calc(-10 / 16 * 1rem));
             display: block;
@@ -857,8 +721,8 @@
             }
         }
 
-        .cs-li-link {
-            &.cs-drop-link {
+        .rn-li-link {
+            &.rn-drop-link {
                 display: block;
                 width: 100%;
                 /* prevents padding from affecting height and width */
@@ -888,40 +752,16 @@
     }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #cs-navigation {
-            .cs-drop-ul {
-                background-color: var(--dark);
-            }
-
-            .cs-li-link {
-                &.cs-drop-link {
-                    &:hover {
-                        background-color: var(--medium);
-                    }
-                }
-            }
-
-            .cs-drop-icon {
-                /* turns it white */
-                filter: grayscale(1) brightness(1000%);
-            }
-        }
-    }
-}
-
 /*-- -------------------------- -->
 <---     Desktop Navigation     -->
 <--- -------------------------- -*/
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #cs-header-banner {
+    #rn-header-banner {
         z-index: 10000;
         width: 100%;
-        position: fixed;
+        position: sa;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         min-height: 60px;
         background-color: #f8f8f8;
@@ -932,7 +772,7 @@
         top: 0;
         border: 0;
 
-        .cs-container {
+        .rn-container {
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -942,19 +782,19 @@
             gap: 1.5rem;
         }
 
-        .cs-contact-info {
+        .rn-contact-info {
             display: flex;
             align-items: center;
             gap: 20px;
         }
 
-        .cs-contact-info {
+        .rn-contact-info {
             display: flex;
             align-items: center;
             gap: 20px;
         }
 
-        .cs-contact-item {
+        .rn-contact-item {
             display: flex;
             align-items: center;
             gap: 5px;
@@ -962,20 +802,20 @@
             font-size: 14px;
         }
 
-        .cs-social-icons {
+        .rn-social-icons {
             display: flex;
             gap: 10px;
             margin-left: 20px;
         }
 
-        .cs-social-icon {
+        .rn-social-icon {
             width: 16px;
             height: 16px;
             background-color: #666;
             border-radius: 50%;
         }
 
-        .cs-search-icon {
+        .rn-search-icon {
             width: 16px;
             height: 16px;
             background-color: #666;
@@ -983,9 +823,9 @@
         }
     }
 
-    #cs-navigation {
+    #rn-navigation {
         z-index: 10000;
-        position: fixed;
+        position: static;
         background-color: #fff;
         width: 100%;
         /* prevents padding from affecting height and width */
@@ -996,7 +836,7 @@
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         top: 60px;
 
-        .cs-container {
+        .rn-container {
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -1006,11 +846,11 @@
             gap: calc(24 / 16 * 1rem);
         }
 
-        .cs-toggle {
+        .rn-toggle {
             display: none;
         }
 
-        .cs-logo {
+        .rn-logo {
             z-index: 100;
             display: flex;
             justify-content: center;
@@ -1030,7 +870,7 @@
             }
         }
 
-        .cs-ul {
+        .rn-ul {
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -1041,14 +881,14 @@
             gap: clamp(1.25rem, 2.6vw, 2.25rem);
         }
 
-        .cs-li {
+        .rn-li {
             padding: calc(32 / 16 * 1rem) 0;
             list-style: none;
             /* prevent flexbox from squishing it */
             flex: none;
         }
 
-        .cs-li-link {
+        .rn-li-link {
             position: relative;
             display: block;
             margin: 0;
@@ -1078,33 +918,9 @@
                 transition: width 0.3s;
             }
 
-            &.cs-active {
+            &.rn-active {
                 &:before {
                     width: 100%;
-                }
-            }
-        }
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 64rem) {
-    body.dark-mode {
-        #cs-navigation {
-            background-color: var(--dark);
-
-            .cs-logo {
-                /* makes it turn white */
-                filter: grayscale(1) brightness(1000%);
-            }
-
-            .cs-li-link {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-li-link {
-                &:before {
-                    background-color: var(--primaryLight);
                 }
             }
         }
@@ -1332,17 +1148,6 @@
     }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #cta {
-            &:after {
-                display: none;
-            }
-        }
-    }
-}
-
 /*-- -------------------------- -->
 <---           Footer           -->
 <--- -------------------------- -*/
@@ -1466,7 +1271,7 @@
                 justify-content: center;
             }
 
-            .cs-button-solid {
+            .rn-button-solid {
                 margin: 0;
                 height: calc(53 / 16 * 1rem);
                 width: calc(250 / 16 * 1rem);
@@ -1589,15 +1394,6 @@
             .copyright {
                 display: inline-block;
             }
-        }
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #footer {
-            background: #061623;
         }
     }
 }
